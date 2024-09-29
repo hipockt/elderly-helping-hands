@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.lead-image {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+#services, #contact {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
