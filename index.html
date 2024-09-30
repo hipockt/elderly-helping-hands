@@ -10,7 +10,6 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            text-align: center;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
@@ -29,6 +28,7 @@
         main {
             flex-grow: 1;
             padding: 20px;
+            min-height: calc(100vh - 180px); /* Adjusting for header/footer height */
         }
         section {
             margin: 20px auto;
@@ -42,6 +42,7 @@
             color: white;
             padding: 10px;
             text-align: center;
+            margin-top: auto;
         }
     </style>
 </head>
