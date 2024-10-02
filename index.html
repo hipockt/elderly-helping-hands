@@ -45,6 +45,27 @@
             text-align: center;
             margin-top: auto;
         }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label, input, textarea {
+            margin: 10px 0;
+            width: 100%;
+            max-width: 400px;
+        }
+        input[type="submit"] {
+            width: 100px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
@@ -65,15 +86,27 @@
                 <li>Learning how to use the computer</li>
             </ul>
         </section>
-        <section id="contact" style="clear: both; padding: 20px; margin-bottom: 40px;">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=elderlyhelpinghands.contact@gmail.com" target="_blank">Contact Elderly Helping Hands</a></p>
-    <p>Phone: To be Announced</p>
-    <p><a href="https://www.facebook.com/elderlyhelping">Visit our Facebook Page</a></p>
-    <p><a href="https://wa.me/905063591472" target="_blank">Chat with us on WhatsApp</a></p>
-    </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to contact us through the form below:</p>
+
+            <form action="mailto:elderlyhelpinghands.contact@gmail.com" method="POST" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <input type="submit" value="Send">
+            </form>
+        </section>
     </main>
-     <footer>
+
+    <footer>
         <p>&copy; 2024 Elderly Helping Hands</p>
     </footer>
 </body>
